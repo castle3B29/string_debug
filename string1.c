@@ -8,6 +8,7 @@ int main(){
     int stop = 5;
     int stop_2 = 6;
     char test_me[8] = "abcdefg";
+    char test_me2[] = "deadbeefdeadcode";
     while(i < 8){
         if(i == stop){
             test_me[i] = "w";
@@ -15,8 +16,16 @@ int main(){
         if(i == stop_2){
             test_me[i] = "w";
         }
-        *test_string++;
         i++;
     }
     printf("%s \n", test_me);
+    i = 0;
+    while (i < 17){
+        if (i == stop_2){
+            test_me2[i] = "X";
+        }
+        i++;
+
+    }
+    printf("%s \n", test_me2);
 }
